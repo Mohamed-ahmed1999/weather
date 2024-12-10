@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Weather</title>
+</head>
+
+<body>
+    <div class="site-content pos" id="Home" >
+        <header class="site-header py-3">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="logo d-flex align-items-center text-decoration-none" href="/">
+                        <img src="./img/logo@2x.png" alt="Weather Logo" class="logo img-fluid me-3"
+                            style="width: 60px;">
+                        <div class="logo-type pt-3">
+                            <h1 class="site-title mb-0 text-white">Weather</h1>
+                            <p class="p-title">Tagline goes here</p>
+                        </div>
+                    </a>
+                    <button class="navbar-toggler bg-body" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto gap-5 p-4">
+                            <li class="nav-item"><a class="nav-link " href="#Home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#About">News</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Services">Live Cameras</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Works">Photos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main class="hero position-relative">
+            <section class="search-container">
+                <input type="text" class="search-input" id="search" placeholder="Find your location...">
+                <button class="find-button">Find</button>
+            </section>
+
+            <section class="weather position-absolute text-white " id="forecast-container">
+                <div class="container">
+                    <div id="forecast">
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="site-footer">
+            <div class="container-fluid co-fuiled">
+                <div class="row">
+                    <div class="col-md-8 d-flex justify-content-center">
+                        <div class="search-container2 d-flex align-items-center m-auto">
+                            <input type="text" class="search-input2" placeholder="Find your location...">
+                            <button class="find-button2">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1">
+                        <div class="social-links2 d-flex gap-1">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                    <p class="colophon text-white pt-4">Copyright 2014 Company name. Designed by Themezy. All rights
+                        reserved</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+
+
+    <div class="site-content d-none" id="Contact">
+        <header class="site-header py-3">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="logo d-flex align-items-center text-decoration-none" href="/">
+                        <img src="./img/logo@2x.png" alt="Logo" class="logo img-fluid me-3" style="width: 60px;">
+                        <div class="logo-type pt-3">
+                            <h1 class="site-title mb-0 text-white">Company name</h1>
+                            <p class="p-title">Tagline goes here</p>
+                        </div>
+                    </a>
+                    <button class="navbar-toggler bg-body" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto gap-5 p-4">
+                            <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#About">News</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Services">Live Cameras</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Works">Photos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Clients">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="line">
+            <div class="container">
+                <div class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#Home" onclick="navigateToSection('Home')">Home
+                        <i class="fa-solid fa-arrow-right ps-1 text-white"></i></a>
+                    </li>
+                    <li class="breadcrumb-item text-white" aria-current="page">Contact</li>
+                </div>
+            </div>
+
+            <div class="fullwidth-block">
+                <div class="container">
+                    <div class="beto">
+                        <div class="col-md-5">
+                            <div class="contact-details">
+                                <div class="map" data-latitude="-6.897789" data-longitude="107.621735"></div>
+                                <div class="contact-info">
+                                    <div class="icon2">
+                                        <p class="text-white">
+                                            <i class="fa-solid fa-location-dot pe-2"></i>
+                                            Company Name INC.<br>2803 Avenue Street, Los Angeles
+                                        </p>
+                                    </div>
+                                    <div class="phone2">
+                                        <a href="#">
+                                            <p class="text-white fs-6"><i class="fa-solid fa-phone pe-2"></i>+1 800 314
+                                                235</p>
+                                        </a>
+                                        <a href="#">
+                                            <p class="text-white fs-6"><i
+                                                    class="fa-solid fa-envelope pe-2"></i>contact@companyname.com</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contactus">
+                            <div class="contianer">
+                                <div class="text-contact">
+                                    <h1 class="text-white">Contact us</h1>
+                                    <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                                    </p>
+                                    <form action="#" class="contact-form">
+                                        <div class="row">
+                                            <div class="col-md-6"><input type="text" placeholder="Your name..."></div>
+                                            <div class="col-md-6"><input type="text" placeholder="Email Address...">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6"><input type="text" placeholder="Company name...">
+                                            </div>
+                                            <div class="col-md-6"><input type="text" placeholder="Website..."></div>
+                                        </div>
+                                        <textarea placeholder="Message..."></textarea>
+                                        <div class="text-right">
+                                            <input type="submit" value="Send message">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="fac text-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 d-flex justify-content-center">
+                        <div class="search-container2 d-flex align-items-center m-auto">
+                            <input type="text" class="search-input2" placeholder="Find your location...">
+                            <button class="find-button2">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1">
+                        <div class="social-links2 d-flex gap-1 ps-5">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                    <p class="colophon text-white pt-4">Copyright 2014 Company name. Designed by Themezy. All rights
+                        reserved</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+</body>
+
+<script src="./js/main.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
